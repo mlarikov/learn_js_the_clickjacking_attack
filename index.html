@@ -14,8 +14,8 @@
         }
     </style>
     <script>
-        function attack () {
-            window.onbeforeunload = function() {
+        function attack() {
+            window.onbeforeunload = function () {
                 window.onbeforeunload = null;
                 return "Want to leave without learning all the secrets (he-he)?";
             }
@@ -26,7 +26,11 @@
 <html>
 
 <body>
+    <p>After a click on the button the visitor gets a "strange" question abour whether they want to leave.</p>
 
+    <p>Probably they would respond "No" and the iframe protection is hacked.</p>
+
+    <button onclick="attack()">Add "protected" iframe</button>
 </body>
 
 </html>
