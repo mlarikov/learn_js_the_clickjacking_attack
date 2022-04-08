@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <style>
-        iframe{
+        iframe {
             width: 400px;
             height: 100px;
             position: absolute;
@@ -13,6 +13,15 @@
             z-index: 1;
         }
     </style>
+    <script>
+        function attack () {
+            window.onbeforeunload = function() {
+                window.onbeforeunload = null;
+                return "Want to leave without learning all the secrets (he-he)?";
+            }
+            document.body.insertAdjacentHTML('befre', '<iframe src="iframe.html">')
+        }
+    </script>
 </head>
 <html>
 
