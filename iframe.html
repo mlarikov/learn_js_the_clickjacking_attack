@@ -24,8 +24,14 @@
         if (top.document.dmain == document.domain) {
             protector.remove();
         }
-
     </script>
+
+    This text is always vidible.
+
+    Bit if the page was open inside a document frome another domain, the div over it wouuld prevent any action.
+
+    <button onclick="alert(1)">Click wouldn't work in that case</button>
+
 </body>
 
 </html>
